@@ -1,0 +1,439 @@
+html{
+    --main-color:#9356DC ;
+    --second-color:#FF79DA ;
+    --third-color:#99E2D0;
+}
+body{
+    margin: 0 auto;
+}
+.container{
+    font-family: 'Roboto';
+}
+.HeaderLogo{
+    width: 100%;
+}
+.logoOhmyfood{
+   text-align: center; 
+   padding-top: 14px;
+   font-family: 'Shrikhand', cursive;
+   font-size: 30px;
+}
+.HeadLocation{
+    display: flex;
+    background-color: #EAEAEA;
+}
+.Vector{
+    width: 12px;
+    height: 16px;
+    padding-right: 17px;
+    padding-top: 16px;
+    padding-left: 104px;
+}
+.ville{
+    font-size: 16px;
+    font-weight: 500;
+}
+.section1{
+    background-color:  #F7F7F7;
+    padding-bottom: 57px;
+}
+.Reservez{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 39px;
+    margin-bottom: 12px;
+}
+.Decouvrez{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+}
+.bouttonExplorer  .Explorer{
+    background: linear-gradient(200.64deg, var(--main-color) -5.2%, var(--second-color) 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: transparent;
+    padding: 13px 18.75px;
+}
+.Explorer{
+    font-size: 16px;
+    color: white;
+}
+.bouttonExplorer{
+    padding-top: 40px;
+    text-align: center;
+}
+.Titrefonctionnement{
+    padding-top: 48px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.section2{
+    padding-left: 20px;
+}
+.choisirRestaurants , .compositionMenu , .DegustationAuRestaurant {
+    background: #F7F7F7;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    margin-top: 26px;
+    border-style: none;
+    width: 322.49px;
+    height: 72.38px;
+}
+.textChoisirRestau , .textCompositionMenu , .textDegustation{
+    border: transparent;
+    background: #F7F7F7;
+    padding-top: 28px;
+    padding-left: 27px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+.Portable{
+    width:13.02px;
+    height: 20px;
+    padding-left:22px;
+    color:#7E7E7E;
+}
+.numero{
+   margin-left: -5px;
+    padding: 3px 7px;
+    color:white;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+.menu{
+    width: 16px;
+    height: 16px;
+    padding-left: 23px;
+    color:#7E7E7E;
+}
+.store{
+    width: 18px;
+    height: 18px;
+    padding-left: 24px;
+    color:#7E7E7E;
+}
+.section3{
+    padding-left: 20px;
+    background: #F7F7F7;
+    margin-top: 68px;
+    padding-bottom: 64px;
+}
+.titreRestaurants{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 54px;
+}
+.card-palette {
+    margin-top: 40px;
+}
+.card-palette , .cardNoteEnchante , .cardAlaFransaise , .cardDeliceDesSens{
+    width:335px;
+    height: 251px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 18px;
+}
+.badgeNouveau{
+    width: 78.82px;
+    height: 29px;
+    background: #99E2D0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    position: absolute;
+    color: #008766;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 14px;
+    left: 72%;
+    top: 10%;
+}
+.cardPaletteDuGout , .cardNoteEnchantee , .cardAlaFrancaise , .cardDeliceDesSens{
+    text-decoration: none;
+} 
+.image-box{
+    width: 335px;
+    height: 163px;
+    position: relative;
+} 
+.imgPaletteDuGout, .imgNoteEnchantee, .imgAlaFrancaise, .imgDeliceDesSens{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+} 
+.titreMenu{
+    font-size: 18px;
+    font-weight: 700;
+    padding-left: 12.81px;
+    color: #000000;
+    padding-top: 16px;
+}
+.placeRestaurant{
+    font-size: 17px;
+    font-weight: 300;
+    padding-left: 12.81px;
+    padding-top: 5px;
+    color: #000000;
+}
+.infoRest{
+    display: flex;
+    justify-content: space-between;
+}
+.heart{
+    padding-top: 23px;
+    padding-right: 24.63px;
+    color: #000000;
+    width: 21.68px;
+    height: 21px;
+}
+.PiedDuPage{
+    width: 100%;
+    background: #353535;
+    padding-left: 25px;
+    height: 197px;
+    color: white;
+}
+.logoOhmyfoodFooter{
+    font-family: 'Shrikhand', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 22px;
+}
+.PremierLien{
+    display: flex;
+    padding-top: 16px;
+}
+.utensils{
+    width: 11px;
+    height: 13px;
+}
+.ProposerRestaurant , .DevenirPartenaire{
+    font-size: 16px;
+    padding-left: 11px;
+}
+.DeuxiemeLien{
+    display: flex;
+    padding-top: 7px;
+}
+.hand{
+    width: 11.92px;
+    height: 13px;
+}
+.textFooter{
+    font-size: 16px;
+    padding-top: 7px;
+}
+.choisirRestaurants:hover, .textChoisirRestau:hover, .compositionMenu:hover, .textCompositionMenu:hover, .DegustationAuRestaurant:hover, .textDegustation:hover{
+    background: #F5EDFF;
+}
+.Portable:hover, .menu:hover, .store:hover{
+   color:var(--main-color);
+}
+
+/* la palette du goût */
+
+.entete{
+    display: flex;
+}
+.image .imageEntete{
+    width: 100%;
+    padding-top: 5px;
+}
+.back{
+    width: 17.2px;
+    height: 16px;
+    padding-left: 23px;
+    padding-top: 26px;
+    padding-right: 64.8px;
+    color: #353535;
+}
+.frame{
+    background: #F7F7F7;
+    position: absolute;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    top: 35%;
+    padding-bottom: 40px;
+}
+.titrePlusCoeur{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 41px;
+    padding-top: 32px;
+}
+.titre{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 400;
+    font-size: 28px;
+    padding-left: 17px;
+}
+.heartMenu{
+    width: 22px;
+    height: 21px;
+    padding-top: 8px;
+}
+header{
+    position: relative;
+}
+.frameEntree{
+    padding-top: 26px;
+    padding-left: 13px;
+}
+.entree {
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom:3px solid #99E2D0;
+    width: 40px;
+    height: 27px;
+}
+.cardEntre{
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    height:68.07px;
+    width: 349px;
+}
+.checkPrix{
+    display: flex;
+    width: 59px;
+    background: #99E2D0;
+    border-radius: 0px 15px 15px 0px;
+    visibility: hidden;
+}
+.boxPrix{
+    width: 48.14px;
+}
+.cerclecheck{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-right: 19px;
+    margin-left: 19px;
+    color: #99E2D0;
+    align-items: center;
+}
+.checkPrix:active{
+    visibility: visible;
+}
+.titreEntree{
+    padding-top: 12.03px;
+    padding-left: 10.53px;
+    padding-bottom: 12.03px;
+}
+.nomEntree{
+    font-size: 18px;
+    font-weight: 500;
+}
+.description{
+    font-size: 15px;
+    font-weight: 300;
+   padding-top: 7px;
+}
+.prix{
+    padding-top: 39px;
+    padding-right: 12.03px;
+    font-weight: 500;
+}
+.framePlats{
+    padding-top: 40.47px;
+    padding-left: 13px;
+}
+.plats{   
+    padding-left: 37px;
+}
+.platsO{
+    width: 40px;
+    height: 27px;
+    font-size: 16px;
+    font-weight: 300;
+    border-bottom:3px solid #99E2D0;
+}
+.frameDessert{
+    padding-top: 40px;
+    padding-left: 13px;
+}
+.bouttonCommander{
+    padding-top: 53px;
+    text-align: center;
+   
+}
+.bouttonCommander  .commander{
+    background: linear-gradient(200.64deg, var(--main-color) -5.2%, var(--second-color) 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: transparent;
+    padding: 13px 16px;
+    width: 186px;
+    height: 50px;
+}
+.commander{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.bouttonCommander:hover  .commander:hover{
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+
+}
+.PiedDuPage1{
+    width: 100%;
+    background: #353535;
+    padding-left: 25px;
+    height: 197px;
+    color: white;
+    margin-top: 1147px;
+}
+/** page meuu la note enchante**/
+.PiedDuPageNote{
+    width: 100%;
+    background: #353535;
+    padding-left: 25px;
+    height: 197px;
+    color: white;
+    margin-top: 1227px;
+}
+@media only screen and (min-width:768px) and (max-width: 1440px){
+   .HeadLocation{
+    justify-content: center;
+   } 
+   .Vector{
+    padding-left: 0px;
+   }
+   .section2 , .section3{
+    padding-left: 193px;
+    width: 100%;
+   }
+   .fonctionnement{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 192px;
+   }
+   .lesRestaurants{
+     display: flex;
+     justify-content: space-between;
+    }
+   .cardNoteEnchantee, .cardAlaFrancaise, .cardDeliceDesSens{
+    padding-top: 40px;
+    }
+    .PiedDuPage{
+        width:100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 49px;
+    }
+    .logoOhmyfoodFooter{
+        align-items: flex-end;
+    }
+}
