@@ -11,6 +11,7 @@ body{
 }
 .HeaderLogo{
     width: 100%;
+    position: relative;
 }
 .logoOhmyfood{
    text-align: center; 
@@ -72,7 +73,7 @@ body{
 .section2{
     padding-left: 20px;
 }
-.choisirRestaurants , .compositionMenu , .DegustationAuRestaurant {
+.titre_item {
     background: #F7F7F7;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
@@ -81,15 +82,15 @@ body{
     width: 322.49px;
     height: 72.38px;
 }
-.textChoisirRestau , .textCompositionMenu , .textDegustation{
+.text-fonctionnement{
     border: transparent;
     background: #F7F7F7;
     padding-top: 28px;
     padding-left: 27px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
-}
+    line-height: 72px;
+  }
 .Portable{
     width:13.02px;
     height: 20px;
@@ -151,7 +152,7 @@ body{
     left: 72%;
     top: 10%;
 }
-.cardPaletteDuGout , .cardNoteEnchantee , .cardAlaFrancaise , .cardDeliceDesSens{
+.cards{
     text-decoration: none;
 } 
 .image-box{
@@ -228,10 +229,10 @@ body{
     font-size: 16px;
     padding-top: 7px;
 }
-.choisirRestaurants:hover, .textChoisirRestau:hover, .compositionMenu:hover, .textCompositionMenu:hover, .DegustationAuRestaurant:hover, .textDegustation:hover{
+.fonctionnement-item:hover, .fonctionnement-item:hover .text-item{
     background: #F5EDFF;
 }
-.Portable:hover, .menu:hover, .store:hover{
+.fonctionnement-item:hover i{
    color:var(--main-color);
 }
 
@@ -258,7 +259,7 @@ body{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    top: 35%;
+    top: 220px;
     padding-bottom: 40px;
 }
 .titrePlusCoeur{
@@ -393,7 +394,7 @@ header{
     padding-left: 25px;
     height: 197px;
     color: white;
-    margin-top: 1147px;
+    margin-top: 1127px;
 }
 /** page meuu la note enchante**/
 .PiedDuPageNote{
@@ -413,7 +414,7 @@ header{
    }
    .section2 , .section3{
     padding-left: 193px;
-    width: 100%;
+    width: auto;
    }
    .fonctionnement{
     display: flex;
@@ -423,17 +424,88 @@ header{
    .lesRestaurants{
      display: flex;
      justify-content: space-between;
+     width: auto;
     }
-   .cardNoteEnchantee, .cardAlaFrancaise, .cardDeliceDesSens{
-    padding-top: 40px;
+   .card-palette{
+    margin-top: 0px;
+    margin-right: 26px;
+   }
+   .cardNoteEnchante, .cardAlaFransaise{
+    margin-right: 26px;
+   }
+    .cards{
+        padding-top: 40px;
     }
     .PiedDuPage{
-        width:100%;
+        width:auto;
         display: flex;
-        justify-content: space-between;
+        justify-content:flex-start;
+        flex-direction: row-reverse;
+        padding-right: 78px;
         padding-top: 49px;
     }
-    .logoOhmyfoodFooter{
-        align-items: flex-end;
+    .PremierLien, .DeuxiemeLien, .textFooter{
+        padding-right: 40px;
+        padding-top: 52px;
     }
+    .logoOhmyfoodFooter{
+        padding-top: 49px;
+    }
+    .footer-item{
+        display: flex;
+    }
+    /* version desktop des pages menu*/
+   .HeaderLogo{
+    width: auto;
+   }
+   .entete{
+    width: auto;
+    padding-left: 75px;
+   }
+   .back{
+    padding-right: 527.8px;
+   }
+   .image, .imageEntete{
+    height: 423px;
+    object-fit: cover;
+   }
+   .frame{
+    top: 345px;
+    margin: auto;
+    width: 75%;
+    transform: translateX(-50%);
+    left: 50%;
+   }
+   .titrePlusCoeur{
+    justify-content: center;
+    padding-right:0px;
+   }
+   .titre{
+    padding-right: 24px;
+   }
+   .cardEntre{
+    width: 60%;
+   }
+   .frameEntree , .framePlats, .frameDessert{
+    transform: translateX(20%);
+    padding-left: 0px;
+   }
+   .PiedDuPage1{
+    width:auto;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row-reverse;
+    padding-right: 78px;
+    padding-top: 49px;
+    margin-top: 1050px;
+   }
+   .PiedDuPageNote{
+    width:auto;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row-reverse;
+    padding-right: 78px;
+    padding-top: 49px;
+    margin-top: 1130px;
+   }
 }
