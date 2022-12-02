@@ -191,43 +191,36 @@ body{
     color: #000000;
     width: 21.68px;
     height: 21px;
+    font-size: 25px;
 }
 .PiedDuPage{
     width: 100%;
     background: #353535;
-    padding-left: 25px;
     height: 197px;
-    color: white;
 }
 .logoOhmyfoodFooter{
     font-family: 'Shrikhand', cursive;
     font-size: 18px;
     font-weight: 400;
     padding-top: 22px;
+    color: #fff;
+    padding-left: 25px;
 }
-.PremierLien{
-    display: flex;
-    padding-top: 16px;
+.footer_nav ul{
+    list-style-type: none;
+    line-height: 25px;
+    padding-left: 25px;
 }
-.utensils{
+.footer_nav--link{
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.footer-icone{
+    padding-right: 11px;
     width: 11px;
-    height: 13px;
-}
-.ProposerRestaurant , .DevenirPartenaire{
-    font-size: 16px;
-    padding-left: 11px;
-}
-.DeuxiemeLien{
-    display: flex;
-    padding-top: 7px;
-}
-.hand{
-    width: 11.92px;
-    height: 13px;
-}
-.textFooter{
-    font-size: 16px;
-    padding-top: 7px;
 }
 .fonctionnement-item:hover, .fonctionnement-item:hover .text-item{
     background: #F5EDFF;
@@ -241,9 +234,9 @@ body{
 .entete{
     display: flex;
 }
-.image .imageEntete{
-    width: 100%;
-    padding-top: 5px;
+.image{
+    height: 275px;
+    object-fit: cover;
 }
 .back{
     width: 17.2px;
@@ -259,7 +252,7 @@ body{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    top: 220px;
+    top: 290px;
     padding-bottom: 40px;
 }
 .titrePlusCoeur{
@@ -267,6 +260,7 @@ body{
     justify-content: space-between;
     padding-right: 41px;
     padding-top: 32px;
+    width: 100%;
 }
 .titre{
     font-family: 'Shrikhand', cursive;
@@ -275,10 +269,26 @@ body{
     padding-left: 17px;
 }
 .heartMenu{
-    width: 22px;
-    height: 21px;
     padding-top: 8px;
+    padding-right: 33px;
+    font-size: 25px;
+    position: relative;
 }
+.restaurant__like {
+    color: white;
+    -webkit-text-stroke: 1px black;
+    transition: color 1s;
+    background: linear-gradient(160deg, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+  }
+  .restaurant__like:hover {
+    color: transparent;
+    -webkit-text-stroke-color: #9356DC;
+  }
+  .restaurant__like:active {
+    color: transparent;
+    -webkit-text-stroke-color: #9356DC;
+  }
 header{
     position: relative;
 }
@@ -299,19 +309,73 @@ header{
     border-radius: 15.0431px;
     margin-top: 12px;
     display: flex;
-    justify-content: space-between;
     height:68.07px;
-    width: 349px;
+    width: 100%;
+    overflow: hidden;
 }
-.checkPrix{
+.start_card{
+    animation: apparition-start 1s ease 1;
+}
+@keyframes apparition-start{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.plat_card{
+    animation: apparition-plat 1s ease 1;
+}
+@keyframes apparition-plat{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    30%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.dessert_card{
+    animation: apparition-dessert 1s ease 1;
+}
+@keyframes apparition-dessert{
+    0%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    60%{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.check-animation{
     display: flex;
     width: 59px;
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
-    visibility: hidden;
+    margin-right: -61px;
+    transition: margin-right 2s;
+}
+.cardEntre:hover .check-animation{
+    margin-right: 0;
 }
 .boxPrix{
-    width: 48.14px;
+    padding-top: 39px;
+    padding-right: 8px;
+    display: flex;
+    flex-basis: 15%;
 }
 .cerclecheck{
     width: 20px;
@@ -322,15 +386,13 @@ header{
     margin-right: 19px;
     margin-left: 19px;
     color: #99E2D0;
-    align-items: center;
-}
-.checkPrix:active{
-    visibility: visible;
 }
 .titreEntree{
     padding-top: 12.03px;
     padding-left: 10.53px;
     padding-bottom: 12.03px;
+    flex-basis: 85%;
+    white-space: nowrap;
 }
 .nomEntree{
     font-size: 18px;
@@ -339,11 +401,9 @@ header{
 .description{
     font-size: 15px;
     font-weight: 300;
-   padding-top: 7px;
+    padding-top: 7px;
 }
 .prix{
-    padding-top: 39px;
-    padding-right: 12.03px;
     font-weight: 500;
 }
 .framePlats{
@@ -403,7 +463,7 @@ header{
     padding-left: 25px;
     height: 197px;
     color: white;
-    margin-top: 1227px;
+    margin-top: 1207px;
 }
 @media only screen and (min-width:768px) and (max-width: 1440px){
    .HeadLocation{
@@ -442,22 +502,19 @@ header{
         justify-content:flex-start;
         flex-direction: row-reverse;
         padding-right: 78px;
-        padding-top: 49px;
-    }
-    .PremierLien, .DeuxiemeLien, .textFooter{
-        padding-right: 40px;
-        padding-top: 52px;
+        height: 114px;
     }
     .logoOhmyfoodFooter{
         padding-top: 49px;
     }
-    .footer-item{
-        display: flex;
+    .footer_nav{
+        display: flex;     
+    }
+    .footer_nav--link{
+       padding-right: 40px;
+       padding-top: 33px;
     }
     /* version desktop des pages menu*/
-   .HeaderLogo{
-    width: auto;
-   }
    .entete{
     width: auto;
     padding-left: 75px;
@@ -465,12 +522,13 @@ header{
    .back{
     padding-right: 527.8px;
    }
-   .image, .imageEntete{
+   .image .imageEntete{
     height: 423px;
+    width: 100%;
     object-fit: cover;
    }
    .frame{
-    top: 345px;
+    top: 395px;
     margin: auto;
     width: 75%;
     transform: translateX(-50%);
@@ -497,7 +555,7 @@ header{
     flex-direction: row-reverse;
     padding-right: 78px;
     padding-top: 49px;
-    margin-top: 1050px;
+    margin-top: 1250px;
    }
    .PiedDuPageNote{
     width:auto;
@@ -506,6 +564,6 @@ header{
     flex-direction: row-reverse;
     padding-right: 78px;
     padding-top: 49px;
-    margin-top: 1130px;
+    margin-top: 1330px;
    }
 }
