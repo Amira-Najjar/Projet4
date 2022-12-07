@@ -79,7 +79,7 @@ body{
     border-radius: 20px;
     margin-top: 26px;
     border-style: none;
-    width: 322.49px;
+    width: 90%;
     height: 72.38px;
 }
 .text-fonctionnement{
@@ -126,12 +126,13 @@ body{
     font-size: 24px;
     font-weight: 700;
     padding-top: 54px;
+    margin-bottom: 20px;
 }
 .card-palette {
     margin-top: 40px;
 }
-.card-palette , .cardNoteEnchante , .cardAlaFransaise , .cardDeliceDesSens{
-    width:335px;
+.carte-restaurant{
+    width:90%;
     height: 251px;
     background: #FFFFFF;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -156,17 +157,16 @@ body{
     text-decoration: none;
 } 
 .image-box{
-    width: 335px;
     height: 163px;
     position: relative;
+    object-fit: cover;
 } 
-.imgPaletteDuGout, .imgNoteEnchantee, .imgAlaFrancaise, .imgDeliceDesSens{
+.image-box img{
     width: 100%;
     height: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    object-fit: cover;
-} 
+}
 .titreMenu{
     font-size: 18px;
     font-weight: 700;
@@ -234,9 +234,23 @@ a{
 .entete{
     display: flex;
 }
+.imageEntete{
+    background-image: url(../images/restaurants/paletteDuGout.jpg);
+}
+.imageDelice{
+    background-image: url(../images/restaurants/DeliceDesSens.jpg);
+}
+.imageEnchante{
+    background-image: url(../images/restaurants/noteEnchante.jpg);
+}
+.imageAlaFrancaise{
+    background-image: url(../images/restaurants/ALaFrancaise.jpg);
+}
 .image{
-    height: 275px;
-    object-fit: cover;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 }
 .back{
     width: 17.2px;
@@ -368,14 +382,21 @@ header{
     margin-right: -61px;
     transition: margin-right 2s;
 }
-.cardEntre:hover .check-animation{
+.check-animation i{
+    transition: transform 1s ease-in-out;
+}
+.cardEntre:hover .check-animation {
     margin-right: 0;
+}
+.cardEntre:hover i{
+    transform: rotate(360deg);
 }
 .boxPrix{
     padding-top: 39px;
-    padding-right: 8px;
     display: flex;
     flex-basis: 15%;
+    justify-content: flex-end;
+    padding-right: 20px;
 }
 .cerclecheck{
     width: 20px;
@@ -465,6 +486,53 @@ header{
     color: white;
     margin-top: 1207px;
 }
+/** page loader**/
+.loader-container{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: load-conteneur 4s linear forwards, minimiser 100ms 3s forwards;
+}
+@keyframes load-conteneur{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes minimiser{
+    0%{
+        z-index: 2;
+    }
+    100%{
+        z-index: -1;
+    }
+}
+.loader-icone{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    border-color: white transparent white transparent;
+    border-radius: 50%;
+    animation: loader 1s infinite ease-in-out;
+}
+@keyframes loader{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 @media only screen and (min-width:768px) and (max-width: 1440px){
    .HeadLocation{
     justify-content: center;
@@ -472,28 +540,28 @@ header{
    .Vector{
     padding-left: 0px;
    }
-   .section2 , .section3{
-    padding-left: 193px;
-    width: auto;
-   }
    .fonctionnement{
     display: flex;
-    justify-content: space-between;
-    padding-right: 192px;
+   }
+   .fonctionnement .titre_item{
+    width: 30%;
+    margin: auto;
+   }
+   .Titrefonctionnement{
+    margin-bottom: 28px;
    }
    .lesRestaurants{
      display: flex;
-     justify-content: space-between;
-     width: auto;
+   }
+   .lesRestaurants .cards{
+     width: 25%;
     }
-   .card-palette{
-    margin-top: 0px;
-    margin-right: 26px;
+   .carte-restaurant{
+     margin-top: 0px;
+     margin-right: 26px;
+     
    }
-   .cardNoteEnchante, .cardAlaFransaise{
-    margin-right: 26px;
-   }
-    .cards{
+   .cards{
         padding-top: 40px;
     }
     .PiedDuPage{
@@ -522,11 +590,7 @@ header{
    .back{
     padding-right: 527.8px;
    }
-   .image .imageEntete{
-    height: 423px;
-    width: 100%;
-    object-fit: cover;
-   }
+   
    .frame{
     top: 395px;
     margin: auto;
@@ -555,7 +619,7 @@ header{
     flex-direction: row-reverse;
     padding-right: 78px;
     padding-top: 49px;
-    margin-top: 1250px;
+    margin-top: 1180px;
    }
    .PiedDuPageNote{
     width:auto;
@@ -564,6 +628,6 @@ header{
     flex-direction: row-reverse;
     padding-right: 78px;
     padding-top: 49px;
-    margin-top: 1330px;
+    margin-top: 1258px;
    }
 }
