@@ -3,6 +3,10 @@ html{
     --second-color:#FF79DA ;
     --third-color:#99E2D0;
 }
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     margin: 0 auto;
 }
@@ -22,12 +26,13 @@ body{
 .HeadLocation{
     display: flex;
     background-color: #EAEAEA;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .Vector{
     width: 12px;
     height: 16px;
     padding-right: 17px;
-    padding-top: 16px;
     padding-left: 104px;
 }
 .ville{
@@ -172,7 +177,6 @@ body{
     font-weight: 700;
     padding-left: 12.81px;
     color: #000000;
-    padding-top: 16px;
 }
 .placeRestaurant{
     font-size: 17px;
@@ -184,6 +188,7 @@ body{
 .infoRest{
     display: flex;
     justify-content: space-between;
+    padding-top: 16px;
 }
 .heart{
     padding-top: 23px;
@@ -210,6 +215,7 @@ body{
     list-style-type: none;
     line-height: 25px;
     padding-left: 25px;
+    padding-top: 16px;
 }
 .footer_nav--link{
     color: #fff;
@@ -266,7 +272,7 @@ a{
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    top: 290px;
+    top: 320px;
     padding-bottom: 40px;
 }
 .titrePlusCoeur{
@@ -284,7 +290,7 @@ a{
 }
 .heartMenu{
     padding-top: 8px;
-    padding-right: 33px;
+    padding-right: 23px;
     font-size: 25px;
     position: relative;
 }
@@ -475,7 +481,7 @@ header{
     padding-left: 25px;
     height: 197px;
     color: white;
-    margin-top: 1127px;
+    margin-top: 1027px;
 }
 /** page meuu la note enchante**/
 .PiedDuPageNote{
@@ -484,7 +490,7 @@ header{
     padding-left: 25px;
     height: 197px;
     color: white;
-    margin-top: 1207px;
+    margin-top: 1107px;
 }
 /** page loader**/
 .loader-container{
@@ -569,7 +575,7 @@ header{
         display: flex;
         justify-content:flex-start;
         flex-direction: row-reverse;
-        padding-right: 78px;
+        padding-right: 108px;
         height: 114px;
     }
     .logoOhmyfoodFooter{
@@ -617,17 +623,17 @@ header{
     display: flex;
     justify-content:flex-start;
     flex-direction: row-reverse;
-    padding-right: 78px;
-    padding-top: 49px;
-    margin-top: 1180px;
+    padding-right: 108px;
+    margin-top: 1120px;
+    height: 114px;
    }
    .PiedDuPageNote{
     width:auto;
     display: flex;
     justify-content:flex-start;
     flex-direction: row-reverse;
-    padding-right: 78px;
-    padding-top: 49px;
-    margin-top: 1258px;
+    padding-right: 108px;
+    height: 114px;
+    margin-top: 1208px;
    }
 }
