@@ -38,6 +38,8 @@ body{
 .ville{
     font-size: 16px;
     font-weight: 500;
+    border-style: none;
+    background-color: #EAEAEA;
 }
 .section1{
     background-color:  #F7F7F7;
