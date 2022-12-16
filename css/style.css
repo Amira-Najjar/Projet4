@@ -9,6 +9,7 @@ html{
 }
 body{
     margin: 0 auto;
+    max-width: 1440px;
 }
 .container{
     font-family: 'Roboto';
@@ -439,9 +440,6 @@ header{
     padding-top: 40.47px;
     padding-left: 13px;
 }
-.plats{   
-    padding-left: 37px;
-}
 .platsO{
     width: 40px;
     height: 27px;
@@ -541,7 +539,7 @@ header{
         transform: rotate(360deg);
     }
 }
-@media only screen and (min-width:768px) and (max-width: 1440px){
+@media only screen and (min-width:768px){
    .HeadLocation{
     justify-content: center;
    } 
